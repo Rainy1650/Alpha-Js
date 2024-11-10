@@ -32,7 +32,7 @@ console.log(currentScore);
  const newScore = currentScore +1;
 
  // 3. show the update score
-   currentScoreElement.innerText = newScore;
+   currentScoreElement.innerText = newScore
 
 // start a new round  
  // console.log('you have pressed correctly', expectedAlphabet);
@@ -41,6 +41,16 @@ console.log(currentScore);
 }
 else {
   console.log('you missed. you lost a life');
+  // step-1 get the current life number
+  const currentLifeElement = document.getElementById('current-life');
+  const currentLifeText = currentLifeElement.innerText; 
+  const currentLife = parseInt(currentLifeText);
+
+  // step=2 reduce the life count
+  const newLife = currentLife -1;
+  //step-3 display the update life count
+  currentLifeElement.innerText = newLife;
+
 }
 
 }
