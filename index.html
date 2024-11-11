@@ -24,12 +24,12 @@
     <section  id="play-ground"  class="hidden">
         <div class="flex flex-col items-center gap-20 pt-20">
             <!--screen-->
-            <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] ">
+            <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC]  bg-[#FFFFFFB3] ">
               <div class="flex justify-center">
-                <p class=" bg-[#2F2941] px-6 p-4 rounded-br-xl rounded-bl-xl">Don't watch keyboard  while playing...</p>
+                <p class=" bg-[#2F2941] text-white px-6 p-4 rounded-br-xl rounded-bl-xl">Don't watch keyboard  while playing...</p>
               </div>
               <div class=" flex  justify-center h-full">
-                <p id="current-alphabet"        class="text-black text-9xl font-bold uppercase ">Y</p>
+                <p id="current-alphabet" class="text-black text-9xl font-bold uppercase ">Y</p>
               </div>
             </div>
             <!--keybord start-->
@@ -89,13 +89,13 @@
 
     </section>
     <!--Score-->
-    <section class=" score home min-h-screen text-white flex justify-center items-center hidden">
+    <section  id="final-score"   class="  min-h-screen text-white flex justify-center items-center hidden">
       <div class="flex flex-col items-center gap-10 text-center bg-violet-600 rounded-lg  p-4">
         <h1 class="text-8xl ">
           <span class="font-extrabold ">Score : </span>
-          <span class="text-center">14</span>
+          <span id="game-score"  class="text-center">14</span>
           </h1>
-          <button class="btn">Play Again</button>
+          <button onclick="play()" class="btn">Play Again</button>
           <p>Practice will make you Pro</p>
       </div>
     </section>
